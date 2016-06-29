@@ -1,10 +1,10 @@
 body {
-   background-color: #f9f9f9;
+ background-color: #f9f9f9;
 }
 #wrap {
     border: 1px solid #ffffff;
     width: 959px;
-    height:950px;
+    height: 950px;
     background-color: #ffffff;
     padding: 35px 50px 50px 50px;
     margin: 0 auto;
@@ -12,25 +12,26 @@ body {
     box-shadow: 0 0 3px rgba(0,0,0,0.4);
 }
 .items {
-   background-image: url(../img/bground.jpg);
-   margin-bottom:40px;
-   font-size: 15px;
-   width: 966px;
-   height: 20px;
-   padding: 10px 0 10px 0;
+ background-image: url(../img/bground.jpg);
+ margin-bottom:40px;
+ font-size: 15px;
+ width: 966px;
+ height: 40px;
+ text-align:left;
+ font-size:13px;
 }
 .items li {
-    display: inline;
-    margin: 5px 20px 5px 5px;
+    display: inline-block;
+    padding: 13px 40px;
 }
 .items li a {
     text-decoration:none;
     color:#ffffff;
-    padding:0 25px 0 25px;
+    position: center;
 }
-.items li a:hover {
-   background: url(../img/hover.jpg)  center center no-repeat;
-   padding: 7px 25px 10px 25px;
+.items li:hover {
+ padding: 13px 40px;
+ background: url(../img/hover.jpg)  center center no-repeat;
 }
 .items2 {
     float: left;
@@ -38,21 +39,25 @@ body {
     border: 1px solid #c8c8c8;
 }
 .items2 :last-child{
-   border: none;
-}
-.items2 :hover {
-background-color: #f9f9f9;
-color:#000000;
-padding-left: 10px;
+ border: none;
 }
 .items2 li {
     border-bottom: 1px solid #c8c8c8;
-    padding:13px;
     font-size: 14px;
 }
 .items2 li a {
+    display: block;
+    position: relative;
     text-decoration:none;
     color:#656363;
+    text-indent: 13px;
+    line-height: 3;
+}
+.items2 :hover {
+    display: block;
+    background-color: #f9f9f9;
+    color:#000;
+    text-indent: 23px;
 }
 .content {
     width: 678px;
@@ -89,7 +94,7 @@ div .footer {
     font-size:13px;
 }
 .items3 :hover {
-text-decoration: underline;
+    text-decoration: underline;
 }
 .footer p {
     display:block;
